@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link rel="icon" type="image/x-icon" href="public/images/favicon.ico">
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Tanuki Tavern</title>
+</head>
+<body>
+    <header>
+        <div class="navbar-fixed" style="z-index: 999; position: absolute;">
+            <nav class="transparent" >
+                <div class="nav-wrapper">
+                    <a href="#" data-target="navbar-on-hide" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <div class="brand-logo center"><img src="public/images/tanuki-horizontal-logo.png" alt=""></div>
+                    <ul class="right hide-on-med-and-down white-text">
+                        <li><a href="javascript:void(0);"><b>LOGIN</a></b></li>
+                        <li><a href="javascript:void(0);"><b>ORDERS</a></b></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="parallax-container">
+        <div class="parallax"><img src="https://images.unsplash.com/photo-1590577976322-3d2d6e2130d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"></div>
+    </div>
+    <div class="container">
+        <div class="section">
+            <p><h2 class="center">Tanuki Tavern</h2></p>
+            <p><h5 class="center">Conveniently located alongside National Road in Brgy. Talortor, Majayjay, Laguna, serving several authentic Japanese dishes 
+            </h5></p>
+        </div>
+        <div class="divider"></div>
+        <div class="row section">
+            <div class="col s6 m6 l6">
+                <h3><b>MENU</b></h3>
+            </div>
+            <div class="col s6 m6 l6">
+                <p class="right"><a href="#">See our full menu >>></a></p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h4>Sushi</h4>
+            <div class="carousel">
+                <a href="javascript:void(0);" class="carousel-item modal-trigger" data-target="modal1">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="public/images/nigiri-sushi.jpg" alt="Nigiri">
+                            <span class="card-title">Nigiri Sushi</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div include-html="public/pages/templates/modals.html"></div>
+</body>
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> 
+<!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.parallax').parallax();
+        $('.carousel').carousel({
+            fullWidth: true,
+            numVisible: 3
+        });
+        $('.sidenav').sidenav();
+        $('.modal').modal();
+    });
+
+    function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /* Loop through a collection of all HTML elements: */
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("include-html");
+        if (file) {
+        /* Make an HTTP request using the attribute value as the file name: */
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /* Remove the attribute, and call this function once more: */
+            elmnt.removeAttribute("include-html");
+            includeHTML();
+            }
+        }
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /* Exit the function: */
+        return;
+    }
+  }
+}
+includeHTML();
+</script>
+</html>
