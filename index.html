@@ -6,11 +6,12 @@
      <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Tanuki Tavern</title>
 </head>
-<body>
+<body class="light-green lighten-5">
     <header>
         <div class="navbar-fixed" style="z-index: 999; position: absolute;">
             <nav class="transparent" >
@@ -30,36 +31,553 @@
     </div>
     <div class="container">
         <div class="section">
-            <p><h2 class="center">Tanuki Tavern</h2></p>
-            <p><h5 class="center">Conveniently located alongside National Road in Brgy. Talortor, Majayjay, Laguna, serving several authentic Japanese dishes 
-            </h5></p>
+            <div class="row">
+                <div class="col l3 m6 s6">
+                    <div class="center">
+                        <h1 class="brown-text"><i class="fa-solid fa-bowl-food"></i></h1>
+                        <p class=""><h5>Quality Food</h5></p>
+                        <p class="center">
+                            Food was always made with love and with customers in mind
+                        </p>
+                    </div>
+                </div>
+                <div class="col l3 m6 s6">
+                    <div class="center">
+                        <h1 class="brown-text"><i class="fa-sharp fa-solid fa-carrot"></i></h1>
+                        <p class=""><h5>Fresh Ingredients</h5></p>
+                        <p class="center">
+                            Ingredients are always fresh and no leftovers
+                        </p>
+                    </div>
+                </div>
+                <div class="col l3 m6 s6">
+                    <div class="center">
+                        <h1 class="brown-text"><i class="fa-solid fa-user-nurse"></i></h1>
+                        <p class=""><h5>Friendly Staff</h5></p>
+                        <p class="center">
+                            Staff are well-trained and never treat you with disrespect
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col l3 m6 s6">
+                    <div class="center">
+                        <h1 class="brown-text"><i class="fa-solid fa-torii-gate"></i></h1>
+                        <p class=""><h5>Tradition</h5></p>
+                        <p class="center">
+                            Food and environment in Japanese setting
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="divider"></div>
-        <div class="row section">
-            <div class="col s6 m6 l6">
                 <h3><b>MENU</b></h3>
-            </div>
-            <div class="col s6 m6 l6">
-                <p class="right"><a href="#">See our full menu >>></a></p>
-            </div>
-        </div>
-
-        <div class="section">
             <h4>Sushi</h4>
             <div class="carousel">
-                <a href="javascript:void(0);" class="carousel-item modal-trigger" data-target="modal1">
+                <a class="carousel-item modal-trigger" data-target="nigiri-modal">
                     <div class="card">
                         <div class="card-image">
                             <img src="public/images/nigiri-sushi.jpg" alt="Nigiri">
-                            <span class="card-title">Nigiri Sushi</span>
+                            <span class="card-title">Nigiri</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item modal-trigger" data-target="maki-modal">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="public/images/maki-sushi.jpg" alt="Maki">
+                            <span class="card-title">Maki</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item modal-trigger" data-target="chirashi-modal">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="public/images/chirashi-sushi.jpg" alt="Chirashi">
+                            <span class="card-title">Chirashi</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item modal-trigger" data-target="narezushi-modal">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="public/images/narezushi.jpg" alt="Narezushi">
+                            <span class="card-title">Narezushi</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item modal-trigger" data-target="kaburazushi-modal">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="public/images/kaburazushi.jpg" alt="Kaburazushi">
+                            <span class="card-title">Kaburazushi</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item modal-trigger" data-target="temarizushi-modal">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="public/images/temarizushi.jpg" alt="temarizushi">
+                            <span class="card-title">Temarizushi</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item modal-trigger" data-target="sasazushi-modal">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="public/images/Sasazushi.jpg" alt="Sasazushi">
+                            <span class="card-title">Sasazushi</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item modal-trigger" data-target="inari-modal">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="public/images/inari-sushi.jpg" alt="Inari">
+                            <span class="card-title">Inari</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="divider"></div>
+            <div class="section">
+            <h4>Ramen</h4>
+            <div class="carousel">
+                <a class="carousel-item modal-trigger" data-target="miso-modal">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="public/images/miso-ramen.jpg" alt="Miso">
+                            <span class="card-title">Miso</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item modal-trigger" data-target="shio-modal">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="public/images/shio-ramen.jpg" alt="Shio Ramen">
+                            <span class="card-title">Shio</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item modal-trigger" data-target="shoyu-modal">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="public/images/shoyu-ramen.jpg" alt="Shoyu Ramen">
+                            <span class="card-title">Shoyu</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item modal-trigger" data-target="tonkotsu-modal">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="public/images/tonkotsu-ramen.jpg" alt="Tonkotsu">
+                            <span class="card-title">Tonkotsu</span>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
-
+            <br>
+        <span class="center"><h6>We do have other dishes available here at <b>Tanuki Tavern</b>
+            <a href="#">browse our full menu</a></h6></span><br>
+            <div class="divider"></div>
+            <div class="center">
+                <p><h6>Ready to make a reservation? <a href="#">Click here</a></h6></p>
+            </div><br>   
     </div>
-    <div include-html="public/pages/templates/modals.html"></div>
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col s4">
+                    <h5>Lunch</h5>
+                    <p class="grey-text lighten-3">11:30 AM - 2:00 PM</p>
+                    <p><h5>Dinner</h5></p>
+                    <p class="grey-text lighten-3">6:00 PM - 10:00 PM</p>
+                </div>
+                <div class="col s4">
+                    <p><h5>Quick Links</h5></p>
+                    <b>•</b><a href="#" class="grey-text lighten-3"> Contact Us</a><br>
+                    <b>•</b><a href="#" class="grey-text lighten-3"> Help & Support</a><br>
+                    <b>•</b><a href="#" class="grey-text lighten-3"> Testimonials</a><br>
+                    <b>•</b><a href="#" class="grey-text lighten-3"> Directions</a><br>
+                </div>
+                <div class="col s4">
+                    <p><h5>Subscribe</h5></p><br>
+                    <div class="input-field inline white-text">
+                        <input id="email_inline" type="email" class="validate white-text">
+                        <a href="#" class="btn btn-flat white">Send</a>
+                        <label for="email_inline">Email</label>
+                        <span class="helper-text" data-error="Invalid Email"></span>
+                      </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <div include-html="public/pages/templates/modals.html"></div> --> 
+    <!-- Nigiri Modal -->
+    <div id="nigiri-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <img src="public/images/nigiri-sushi.jpg" class="responsive-img" alt="Nigiri Sushi">
+          <h4 class="center">Nigiri Sushi</h4>
+          <p>Nigiri is a type of sushi where the rice is molded by hand and the fish or other topping 
+            pressed by hand atop the rice. And it's the stickiness of the rice, combined with the moisture 
+            from the topping, that helps to adhere the strip of raw fish to the mound of rice underneath. 
+            Here at <b>Tanuki Tavern</b>, we serve freshly made nigiri for you to enjoy. Available in box of dozens</p>
+        </div>
+        <div class="modal-footer">
+            <form action="#">
+                <div class="input-field">
+                    <div class="row">
+                        <div class="col l6 m6 s6">
+                            <select name="nigiri" id="nigiri">
+                                <option value="" disabled selected>How Many?</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="col l6 m6 s6 right">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Add to Orders</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Maki Sushi Modal -->
+    <div id="maki-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <img src="public/images/maki-sushi.jpg" class="responsive-img" alt="Nigiri Sushi">
+          <h4 class="center">Maki Sushi</h4>
+          <p>Maki is a type of sushi roll that includes toasted seaweed nori rolled around vinegar-flavored rice 
+          and various fillings, including raw seafood and vegetables.</p> 
+        </div>
+        <div class="modal-footer">
+            <form action="#">
+                <div class="input-field">
+                    <div class="row">
+                        <div class="col l6 m6 s6">
+                            <select name="maki" id="maki">
+                                <option value="" disabled selected>How Many?</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="col l6 m6 s6 right">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Add to Orders</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Chirashi modal -->
+    <div id="chirashi-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <img src="public/images/chirashi-sushi.jpg" class="responsive-img" alt="Nigiri Sushi">
+          <h4 class="center">Maki Sushi</h4>
+          <p>Chirashi Sushi is a traditional style of Japanese sushi commonly served on happy occasions and at parties. This bright and festive dish is made of sushi rice with a variety of vegetables mixed in, and cooked ingredients scattered on the top.</p> 
+        </div>
+        <div class="modal-footer">
+            <form action="#">
+                <div class="input-field">
+                    <div class="row">
+                        <div class="col l6 m6 s6">
+                            <select name="chirashi" id="chirashi">
+                                <option value="" disabled selected>How Many?</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="col l6 m6 s6 right">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Add to Orders</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Narezushi Modal -->
+    <div id="narezushi-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <img src="public/images/narezushi.jpg" class="responsive-img" alt="Nigiri Sushi">
+          <h4 class="center">Narezushi</h4>
+          <p>
+            Narezushi is fermented fish pickled with rice -- a practice common in much of Southeast Asia around the 2nd century CE. It's thought to have migrated to Japan around the 8th century, but written documentation of "narezushi" didn't appear until the 10th century.
+          </p> 
+        </div>
+        <div class="modal-footer">
+            <form action="#">
+                <div class="input-field">
+                    <div class="row">
+                        <div class="col l6 m6 s6">
+                            <select name="chirashi" id="chirashi">
+                                <option value="" disabled selected>How Many?</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="col l6 m6 s6 right">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Add to Orders</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Kaburazushi Modal -->
+    <div id="kaburazushi-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <img src="public/images/kaburazushi.jpg" class="responsive-img" alt="Nigiri Sushi">
+          <h4 class="center">Kaburazushi</h4>
+          <p>
+            Kabura Sushi is a kind of “Nare Sushi” made with salted buri wrapped with salted kabu (turnips) then pickled in kouji (amazake).
+          </p> 
+        </div>
+        <div class="modal-footer">
+            <form action="#">
+                <div class="input-field">
+                    <div class="row">
+                        <div class="col l6 m6 s6">
+                            <select name="kaburazushi" id="kaburazushi">
+                                <option value="" disabled selected>How Many?</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="col l6 m6 s6 right">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Add to Orders</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="temarizushi-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <img src="public/images/temarizushi.jpg" class="responsive-img" alt="Nigiri Sushi">
+          <h4 class="center">Temarizushi</h4>
+          <p>
+            These tempting sushi balls are not only delightful to eat but also exotic in their appearance and overall appeal. Designed like a traditional Japanese embroidered ball, they look like edible decorative ornaments with bright and colorful toppings.
+
+            Temari consists of two main parts – sushi rice as the base and toppings ranging from raw fish to assorted vegetables. There are also cooked toppings such as smoked salmon, boiled crab, grilled meat, and boiled shrimp.
+            
+            Vegetarians or vegans can also enjoy delicious temari sushi comprising of their favorite vegetables served fresh, grilled, or roasted.
+          </p> 
+        </div>
+        <div class="modal-footer">
+            <form action="#">
+                <div class="input-field">
+                    <div class="row">
+                        <div class="col l6 m6 s6">
+                            <select name="kaburazushi" id="kaburazushi">
+                                <option value="" disabled selected>How Many?</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="col l6 m6 s6 right">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Add to Orders</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Sasazushi Modal -->
+    <div id="sasazushi-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <img src="public/images/sasazushi.jpg" class="responsive-img" alt="Nigiri Sushi">
+          <h4 class="center">Sasazushi</h4>
+          <p>A kind of sushi with sushi rice, toppings and condiments on bamboo leaves (sasa). There is a variety of toppings such as wild vegetables like warabi, bamboo shoots, zenmai, and other ingredients like miso-marinated daikon, walnuts, carrots, hijiki, aburaage, kinshi tamago, sakura denbu, and salmon flakes.</p>
+        </div>
+        <div class="modal-footer">
+            <form action="#">
+                <div class="input-field">
+                    <div class="row">
+                        <div class="col l6 m6 s6">
+                            <select name="nigiri" id="nigiri">
+                                <option value="" disabled selected>How Many?</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="col l6 m6 s6 right">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Add to Orders</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- inari Modal -->
+    <div id="inari-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <img src="public/images/inari-sushi.jpg" class="responsive-img" alt="Nigiri Sushi">
+          <h4 class="center">Inari Sushi</h4>
+          <p>Inari sushi (稲荷寿司, いなり寿司), or Inarizushi as we call it in Japan, are made of sushi rice that is stuffed inside seasoned deep-fried tofu pockets/pouches called Inari age. The tofu pockets are cooked in a dashi-based broth. After the tofu pockets absorb all the flavors, they are squeezed to remove the liquid and ready to be stuffed with sushi rice.
+            With their sweet and savory taste and toothsome bite, these little golden pockets are the best sushi to enjoy at home, picnic, or on the go.</p>
+        </div>
+        <div class="modal-footer">
+            <form action="#">
+                <div class="input-field">
+                    <div class="row">
+                        <div class="col l6 m6 s6">
+                            <select name="nigiri" id="nigiri">
+                                <option value="" disabled selected>How Many?</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="col l6 m6 s6 right">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Add to Orders</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Miso Modal -->
+    <div id="miso-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <img src="public/images/miso-ramen.jpg" class="responsive-img" alt="Nigiri Sushi">
+          <h4 class="center">Miso Ramen</h4>
+          <p>Miso ramen originates in the Northern Hokkaido Prefecture of Japan, and is made, unsurprisingly, with miso paste, a traditional Japanese seasoning made from fermented grains and soybeans. Unique in flavor, the miso taste is probably best described as a combination of salty cheese and nuts with a creamy texture. An oily stock made of pork, chicken or fish and miso paste are boiled together to create a nutty and thick soup. Depending on the color of the miso used, the miso broth can be anywhere from yellow to red in color. Miso ramen tends to have a robust flavor profile, tangy but slightly sweet, and can be mixed with various toppings – butter and corn, leeks, scallions, bean sprouts, onion, cabbage, sliced pork, etc. Miso ramen is often paired with a thicker and chewy noodle.</p>
+        </div>
+        <div class="modal-footer">
+            <form action="#">
+                <div class="input-field">
+                    <div class="row">
+                        <div class="col l6 m6 s6">
+                            <select name="nigiri" id="nigiri">
+                                <option value="" disabled selected>How Many?</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="col l6 m6 s6 right">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Add to Orders</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Shio Ramen Modal -->
+    <div id="shio-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <img src="public/images/shio-ramen.jpg" class="responsive-img" alt="Nigiri Sushi">
+          <h4 class="center">Shio Ramen</h4>
+          <p>Shio Ramen is the oldest of the four types of tare. Shio in Japanese, literally means “salt”. However contrary to the name, Shio Ramen has a contrastingly light and refreshing flavor. The clear broth is made with chicken, vegetable or fish stock and plenty of salt. Occasionally, pork bones are used to make the broth. However, the pork bones are not boiled for as long, as a signature of the Shio Ramen is the lightness of its broth. The simplicity of the broth results in a simpler, more one-dimensional flavor profile. The noodles in Shio Ramen are usually straight and thin.</p>
+        </div>
+        <div class="modal-footer">
+            <form action="#">
+                <div class="input-field">
+                    <div class="row">
+                        <div class="col l6 m6 s6">
+                            <select name="nigiri" id="nigiri">
+                                <option value="" disabled selected>How Many?</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="col l6 m6 s6 right">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Add to Orders</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Shoyu Ramen Modal -->
+    <div id="shoyu-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <img src="public/images/shoyu-ramen.jpg" class="responsive-img" alt="Nigiri Sushi">
+          <h4 class="center">Shoyu Ramen</h4>
+          <p>Shoyu Ramen is made with a soy-sauce base, resulting in a tangy and salty flavor. The ramen broth is clear brown and made with either chicken or vegetable stock, seasoned with plenty of soy sauce to give it its signature brown color. Shoyu Ramen is generally lighter on the palette, as the broth is more one-dimensional and not as rich as the Tonkatsu and Miso ramen. Shoyu Ramen is often topped with bamboo shoots, green onions, carrots, fishcakes, seaweed, boiled eggs, and chili oil. Shoyu Ramen noodles are often thin and curly.</p>
+        </div>
+        <div class="modal-footer">
+            <form action="#">
+                <div class="input-field">
+                    <div class="row">
+                        <div class="col l6 m6 s6">
+                            <select name="nigiri" id="nigiri">
+                                <option value="" disabled selected>How Many?</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="col l6 m6 s6 right">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Add to Orders</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Tonkotsu Ramen Modal -->
+    <div id="tonkotsu-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <img src="public/images/tonkotsu-ramen.jpg" class="responsive-img" alt="Nigiri Sushi">
+          <h4 class="center">Tonkotsu Ramen</h4>
+          <p>Tonkotsu Ramen, probably one of the most popular types of ramen, is made from a pork-bone based broth. The broth is made by boiling pork meat and bone together for multiple hours (the longer the better), resulting in a cloudy, thick and milky broth, that is creamy and richer than the other three types of tare. The broth is mild in flavor and tastes almost milky. This ramen is often topped with green onions, sliced pork, egg, seaweed, and pickled ginger. The noodles are often wiry and thin.</p>
+        </div>
+        <div class="modal-footer">
+            <form action="#">
+                <div class="input-field">
+                    <div class="row">
+                        <div class="col l6 m6 s6">
+                            <select name="nigiri" id="nigiri">
+                                <option value="" disabled selected>How Many?</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="col l6 m6 s6 right">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Add to Orders</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 <!-- JQuery -->
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> 
@@ -67,10 +585,15 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
     $(document).ready(function(){
+        $('.dropdown-trigger').dropdown();
+        $('select').formSelect();
         $('.parallax').parallax();
         $('.carousel').carousel({
+            numVisible: 3,
+            padding: 25,
+            noWrap:true,
             fullWidth: true,
-            numVisible: 3
+            height: 500
         });
         $('.sidenav').sidenav();
         $('.modal').modal();
@@ -103,6 +626,6 @@
     }
   }
 }
-includeHTML();
+
 </script>
 </html>
