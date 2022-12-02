@@ -16,14 +16,19 @@
         <div class="navbar-fixed" style="z-index: 999; position: absolute;">
             <nav class="white black-text" >
                 <div class="nav-wrapper">
-                    <a href="#" data-target="navbar-on-hide" class="sidenav-trigger grey-text"><i class="material-icons">menu</i></a>
+                    <a href="#" data-target="nav-on-hide" class="sidenav-trigger grey-text"><i class="material-icons">menu</i></a>
                     <div class="brand-logo center"><img src="public/images/tanuki-horizontal-logo.png" alt=""></div>
-                    <ul class="right hide-on-med-and-down">
+                    <ul class="right hide-on-med-and-down" id="nav-mobile">
                         <li><a href="javascript:void(0);" class="grey-text modal-trigger" data-target="login-modal"><b>LOGIN</a></b></li>
                         <li><a href="javascript:void(0);" class="grey-text"><b>ORDERS</a></b></li>
                     </ul>
+                    
                 </div>
             </nav>
+            <ul class="sidenav" id="nav-on-hide">
+                <li><a href="javascript:void(0);" class="grey-text modal-trigger" data-target="login-modal"><b>LOGIN</a></b></li>
+                <li><a href="javascript:void(0);" class="grey-text"><b>ORDERS</a></b></li>
+            </ul>
         </div>
     </header>
     <div class="parallax-container">
@@ -631,48 +636,5 @@
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> 
 <!-- Compiled and minified JavaScript -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $('.dropdown-trigger').dropdown();
-        $('select').formSelect();
-        $('.parallax').parallax();
-        $('.carousel').carousel({
-            numVisible: 3,
-            padding: 25,
-            noWrap:true,
-            fullWidth: true
-        });
-        $('.sidenav').sidenav();
-        $('.modal').modal();
-    });
-
-    function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    /* Loop through a collection of all HTML elements: */
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        /*search for elements with a certain atrribute:*/
-        file = elmnt.getAttribute("include-html");
-        if (file) {
-        /* Make an HTTP request using the attribute value as the file name: */
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            /* Remove the attribute, and call this function once more: */
-            elmnt.removeAttribute("include-html");
-            includeHTML();
-            }
-        }
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        /* Exit the function: */
-        return;
-    }
-  }
-}
-
-</script>
+<script src="public/js/main.js"></script>
 </html>
