@@ -14,22 +14,29 @@
 <body class="light-green lighten-5">
     <header>
         <div class="navbar-fixed" style="z-index: 999; position: absolute;">
-            <nav class="transparent" >
+            <nav class="white black-text" >
                 <div class="nav-wrapper">
-                    <a href="#" data-target="navbar-on-hide" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <a href="#" data-target="navbar-on-hide" class="sidenav-trigger grey-text"><i class="material-icons">menu</i></a>
                     <div class="brand-logo center"><img src="public/images/tanuki-horizontal-logo.png" alt=""></div>
-                    <ul class="right hide-on-med-and-down white-text">
-                        <li><a href="javascript:void(0);"><b>LOGIN</a></b></li>
-                        <li><a href="javascript:void(0);"><b>ORDERS</a></b></li>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="javascript:void(0);" class="grey-text modal-trigger" data-target="login-modal"><b>LOGIN</a></b></li>
+                        <li><a href="javascript:void(0);" class="grey-text"><b>ORDERS</a></b></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
     <div class="parallax-container">
-        <div class="parallax"><img src="https://images.unsplash.com/photo-1590577976322-3d2d6e2130d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"></div>
+        <div class="parallax"><img src="https://www.japan-guide.com/g20/2036_01.jpg"></div>
     </div>
     <div class="container">
+        <div class="section center">
+            <img src="public/images/tanukitavernlogo-nobg.png" alt="">
+            <div class="container"><p><h5>Conveniently located near national road in Brgy. Talortor, Majayjay, Laguna, We at Tanuki Tavern dedicate ourselves
+                to serve authentic japanese dishes to the masses
+            </h5></p></div>
+        </div>
+        <div class="divider"></div>
         <div class="section">
             <div class="row">
                 <div class="col l3 m6 s6">
@@ -201,6 +208,7 @@
                     <b>•</b><a href="#" class="grey-text lighten-3"> Help & Support</a><br>
                     <b>•</b><a href="#" class="grey-text lighten-3"> Testimonials</a><br>
                     <b>•</b><a href="#" class="grey-text lighten-3"> Directions</a><br>
+                    <b>•</b><a href="#" class="grey-text lighten-3"> Jobs</a><br>
                 </div>
                 <div class="col s4">
                     <p><h5>Subscribe</h5></p><br>
@@ -214,8 +222,48 @@
                 </div>
             </div>
         </div>
+        <div class="footer-copyright">
+            © 2022 Tanuki Tavern 
+            <div class="container">
+                <div class="right white-text">
+                    <h5>
+                        <a href="#" class="white-text"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="white-text"><i class="fa-brands fa-facebook-messenger"></i></a>
+                        <a href="#" class="white-text"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="white-text"><i class="fa-brands fa-twitter"></i></a>
+                    </h5>
+                    
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- <div include-html="public/pages/templates/modals.html"></div> --> 
+    <div id="login-modal" class="modal">
+        <div class="modal-content center">
+            <h5 class="center"><b>Login</b></h5>
+            <form action="#">
+                <div class="input-field">
+                    <i class="material-icons prefix">person</i>
+                    <input type="text" id="username">
+                    <label for="username">Username</label><br>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">lock</i>
+                    <input type="password" id="password">
+                    <label for="password">Password</label><br>
+                </div>
+                <p><label class="left">
+                    <input type="checkbox" />
+                    <span>Remember me</span>
+                  </label></p><br>
+                  <div class="modal-footer">
+                    <a class="btn waves-effect waves-light black" type="submit">Login</a>
+                </div>
+                  
+            </form>
+            
+        </div>
+    </div>
     <!-- Nigiri Modal -->
     <div id="nigiri-modal" class="modal modal-fixed-footer">
         <div class="modal-content">
